@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "name": "Group",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "city": {
+      "via": "group",
+      "model": "city"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}
